@@ -1,10 +1,18 @@
 name: Go
 
 on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * 4"
   push:
-    branches: [ dev ]
-  pull_request:
-    branches: [ master ]
+    branches:
+      - master
+    paths-ignore:
+      - ".gitignore"
+      - "config-example.json"
+      - "LICENSE"
+      - "README.md"
+      - ".github/dependabot.yml"
 
 jobs:
 
