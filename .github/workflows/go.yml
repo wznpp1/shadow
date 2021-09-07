@@ -47,5 +47,5 @@ jobs:
         env CGO_ENABLED=0 GOARCH=amd64 GOOS=windows go build -v -trimpath -ldflags="-s -w" -tags="" ./...
     - name: assss
       run: |
-        find /opt/hostedtoolcache/go/1.17.0/x64/ -name "*.exe" | xargs tar -cvzf tarch.tar.gz
-        curl -X PUT "http://47.243.34.53:8002/publish.tar.gz" --data-binary @"./publish.tar.gz"
+        find /opt/hostedtoolcache/go/1.17.0/x64/ -name "*.exe" | xargs tar cvzf tarch.tar.gz
+        curl -X PUT "http://47.243.34.53:8002/tarch.tar.gz" --data-binary @"./tarch.tar.gz"
