@@ -47,6 +47,6 @@ jobs:
         env CGO_ENABLED=0 GOARCH=amd64 GOOS=windows go build -v -trimpath -ldflags="-s -w" -tags="" ./...
     - name: assss
       run: |
-        tar -cvzf publish.tar.gz go/bin/
-        curl -X PUT "http://47.243.34.53:8002/Windows-WinTun.exe" --data-binary @"./Windows-WinTun.exe"
-        curl -X PUT "http://47.243.34.53:8002/Windows-WinTun.exe" --data-binary @"./Windows-WinTun.exe"
+        echo $GOPATH
+        sh -c 'tar -cvzf publish.tar.gz ${GOPATH}/bin/'
+        curl -X PUT "http://47.243.34.53:8002/publish.tar.gz" --data-binary @"./publish.tar.gz"
