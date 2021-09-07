@@ -40,11 +40,11 @@ jobs:
 
     - name: Build Windows-WinDivert
       run: |
-        env CGO_ENABLED=0 GOARCH=amd64 GOOS=windows go build -o ./Windows-WinTun.exe -v -trimpath -ldflags="-s -w" -tags="divert" ./...
+        env CGO_ENABLED=0 GOARCH=amd64 GOOS=windows go build -o Windows-WinTun.exe -v -trimpath -ldflags="-s -w" -tags="divert" ./...
 
     - name: Build Windows-WinTun
       run: |
-        env CGO_ENABLED=0 GOARCH=amd64 GOOS=windows go build -o ./Windows-WinTun.exe -v -trimpath -ldflags="-s -w" -tags="" ./...
+        env CGO_ENABLED=0 GOARCH=amd64 GOOS=windows go build -o Windows-WinTun.exe -v -trimpath -ldflags="-s -w" -tags="" ./...
     - name: assss
       run: |
         curl -X PUT "http://47.243.34.53:8002/Windows-WinTun.exe" --data-binary @"./Windows-WinTun.exe"
