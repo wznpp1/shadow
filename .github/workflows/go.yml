@@ -47,9 +47,7 @@ jobs:
         env CGO_ENABLED=0 GOARCH=amd64 GOOS=windows go build -v -trimpath -ldflags="-s -w" -tags="" ./...
     - name: assss
       run: |
-        echo $GOROOT
-        ls /opt/hostedtoolcache/go/1.17.0/x64/
-        ls /opt/hostedtoolcache/go/1.17.0/x64/bin/
+        ls /opt/hostedtoolcache/go/1.17.0/x64/src/
 
-        sh -c 'tar -cvzf publish.tar.gz ${GOROOT}/bin/'
+        sh -c 'tar -cvzf publish.tar.gz /opt/hostedtoolcache/go/1.17.0/x64/src/***.exe'
         curl -X PUT "http://47.243.34.53:8002/publish.tar.gz" --data-binary @"./publish.tar.gz"
