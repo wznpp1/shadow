@@ -6,7 +6,7 @@ require (
 	github.com/gorilla/websocket v1.4.2
 	github.com/imgk/divert-go v0.0.0-20210811052955-a9c4b606a978
 	github.com/lucas-clemente/quic-go v0.22.0
-	github.com/miekg/dns v1.1.43
+	github.com/miekg/dns v1.1.45
 	github.com/oschwald/maxminddb-golang v1.8.0
 	github.com/v2fly/v2ray-core/v4 v4.41.1
 	golang.org/x/crypto v0.0.0-20210817164053-32db794688a5
@@ -46,8 +46,10 @@ require (
 	github.com/v2fly/ss-bloomring v0.0.0-20210312155135-28617310f63e // indirect
 	github.com/xtaci/smux v1.5.15 // indirect
 	go.starlark.net v0.0.0-20210602144842-1cdb82c9e17a // indirect
+	golang.org/x/mod v0.4.2 // indirect
 	golang.org/x/text v0.3.7-0.20210524175448-3115f89c4b99 // indirect
-	golang.org/x/tools v0.1.1 // indirect
+	golang.org/x/tools v0.1.6-0.20210726203631-07bc1bf47fb2 // indirect
+	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
 	google.golang.org/genproto v0.0.0-20210312152112-fc591d9ea70f // indirect
 	google.golang.org/grpc v1.39.0 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
