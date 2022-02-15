@@ -3,7 +3,7 @@ module github.com/imgk/shadow
 go 1.17
 
 require (
-	github.com/gorilla/websocket v1.4.2
+	github.com/gorilla/websocket v1.5.0
 	github.com/imgk/divert-go v0.0.0-20210811052955-a9c4b606a978
 	github.com/lucas-clemente/quic-go v0.22.0
 	github.com/miekg/dns v1.1.43
