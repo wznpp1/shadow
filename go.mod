@@ -9,13 +9,13 @@ require (
 	github.com/miekg/dns v1.1.43
 	github.com/oschwald/maxminddb-golang v1.8.0
 	github.com/v2fly/v2ray-core/v4 v4.41.1
-	golang.org/x/crypto v0.0.0-20210817164053-32db794688a5
-	golang.org/x/net v0.0.0-20210825183410-e898025ed96a
-	golang.org/x/sys v0.0.0-20210823070655-63515b42dcdf
+	golang.org/x/crypto v0.0.0-20211215153901-e495a2d5b3d3
+	golang.org/x/net v0.0.0-20211215060638-4ddde0e984e9
+	golang.org/x/sys v0.0.0-20211216021012-1d35b9e2eb4e
 	golang.org/x/time v0.0.0-20210723032227-1f47c861a9ac
 	golang.zx2c4.com/wireguard v0.0.0-20210805125648-3957e9b9dd19
 	golang.zx2c4.com/wireguard/tun/netstack v0.0.0-20210805125648-3957e9b9dd19
-	golang.zx2c4.com/wireguard/windows v0.4.5
+	golang.zx2c4.com/wireguard/windows v0.5.3
 	google.golang.org/protobuf v1.27.1
 	gvisor.dev/gvisor v0.0.0-20210827202551-ac5bbb582c3d
 )
@@ -46,8 +46,8 @@ require (
 	github.com/v2fly/ss-bloomring v0.0.0-20210312155135-28617310f63e // indirect
 	github.com/xtaci/smux v1.5.15 // indirect
 	go.starlark.net v0.0.0-20210602144842-1cdb82c9e17a // indirect
-	golang.org/x/text v0.3.7-0.20210524175448-3115f89c4b99 // indirect
-	golang.org/x/tools v0.1.1 // indirect
+	golang.org/x/text v0.3.8-0.20211105212822-18b340fc7af2 // indirect
+	golang.org/x/tools v0.1.7 // indirect
 	google.golang.org/genproto v0.0.0-20210312152112-fc591d9ea70f // indirect
 	google.golang.org/grpc v1.39.0 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
